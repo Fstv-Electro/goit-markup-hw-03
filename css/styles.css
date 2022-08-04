@@ -8,6 +8,14 @@
     --text-logo-color: #000000;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
 body {
     background-color: var(--bcg-white-color);
     color: var(--text-color);
