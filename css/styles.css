@@ -17,6 +17,7 @@ html {
 }
 
 body {
+    margin: 0;
     background-color: var(--bcg-white-color);
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
