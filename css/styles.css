@@ -20,6 +20,8 @@ body {
 
 }
 
+/* Властивості контейнерів */
+
 .container {
     width: 1200px;
     padding:0 15px;
@@ -27,11 +29,30 @@ body {
     margin-right: auto;
 }
 
+.main{
+    padding: 94px 15px;
+}
+
+/* обнулення меж списків та заголовків */
+
 .list {
     padding: 0;
     margin: 0;
     list-style: none;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Властивості заголовків */
 
 .section-title {
     color: var(--text-h-color);
@@ -39,12 +60,9 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
- }
-
-h1,h2,h3,h4,h5,h6,p {
-    margin-top: 0;
-    margin-bottom: 0;
 }
+
+
 
 
  /* СТУДІЯ */
@@ -59,7 +77,11 @@ h1,h2,h3,h4,h5,h6,p {
 .page-header{
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC; ;
+    
+}
+
+.portfolio-header {
+    border-bottom: 1px solid #ECECEC;
 }
 
  /* логотип */
@@ -117,7 +139,6 @@ h1,h2,h3,h4,h5,h6,p {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-bottom: 94px;
 }
 
 .hero-title {
@@ -156,9 +177,6 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* Особливості компанії */
 
-.features {
-    margin-bottom: 94px;
-}
 
 .features-title {
     color: var(--text-h-color);
@@ -176,9 +194,6 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* Чим ми займаємося */
 
-.work {
-    margin-bottom: 94px;
-}
 
 .work-title {
     margin-bottom: 50px;
@@ -188,8 +203,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 .team {
     background-color: var(--bcg-grey-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
+
 }
 
 .team-title {
@@ -241,6 +255,13 @@ h1,h2,h3,h4,h5,h6,p {
 
  /* ПОРТФОЛІО */
 
+.portfolio {
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+
+
  /* Фільт */
 
 .portfolio-btn {
@@ -252,6 +273,7 @@ h1,h2,h3,h4,h5,h6,p {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .portfolio-btn:hover,
@@ -264,15 +286,23 @@ h1,h2,h3,h4,h5,h6,p {
 
  /* Список робіт */
 
- .portfolio {
-    font-size: 16px;
-    line-height: 1.88;
- }
+.portfolio li{
+    margin: 30px 30px 30px 0;
+}
 
- .portfolio-title {
+.portfolio img {
+    margin-bottom: 20px;
+}
+
+.portfolio-title {
     color: var(--text-h-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
- }
+    margin-bottom: 4px;
+}
+
+.portfolio p{
+    margin-bottom: 20px;
+}
