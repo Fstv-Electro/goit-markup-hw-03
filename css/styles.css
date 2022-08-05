@@ -56,6 +56,12 @@ h1,h2,h3,h4,h5,h6,p {
 
 }
 
+.page-header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC; ;
+}
+
  /* логотип */
 
 .logo {
@@ -109,6 +115,9 @@ h1,h2,h3,h4,h5,h6,p {
 .hero {
     background-color: var(--bcg-black-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-bottom: 94px;
 }
 
 .hero-title {
@@ -147,12 +156,17 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* Особливості компанії */
 
+.features {
+    margin-bottom: 94px;
+}
+
 .features-title {
     color: var(--text-h-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .features p{
@@ -160,10 +174,30 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 1.71;
 }
 
+/* Чим ми займаємося */
+
+.work {
+    margin-bottom: 94px;
+}
+
+.work-title {
+    margin-bottom: 50px;
+}
+
 /* Команда*/
 
 .team {
     background-color: var(--bcg-grey-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-title {
+    margin-bottom: 50px;
+}
+
+.team img {
+    margin-bottom: 30px;
 }
 
 .name-title{
@@ -171,11 +205,13 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-bottom: 10px;
 }
 
 .team p {
     font-size: 16px;
     line-height: 1.19;
+    margin-bottom: 30px;
 }
 
 
@@ -184,10 +220,13 @@ h1,h2,h3,h4,h5,h6,p {
 .footer {
     background-color: var(--bcg-black-color);
     color: var(--bcg-white-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer .logo {
     color: var(--bcg-white-color);
+    margin-bottom: 20px;
 }
 
 .contacts-footer {
