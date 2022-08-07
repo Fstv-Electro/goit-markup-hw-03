@@ -30,9 +30,6 @@ body {
 
 }
 
-.main{
-    padding: 94px 15px;
-}
 
 /* обнулення меж списків та заголовків */
 
@@ -51,7 +48,12 @@ h6,
 p {
     margin-top: 0;
     margin-bottom: 0;
-    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Властивості заголовків */
@@ -94,7 +96,7 @@ p {
     list-style: none;
 }
 
-.portfolio-header {
+.page-header {
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -138,6 +140,7 @@ p {
 
 .link{
     text-decoration: none;
+    color: var(--text-color);
 }
 
 .link:hover,
@@ -150,12 +153,16 @@ p {
 .contacts-header{
     display: flex;
     align-items: center;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    margin-left: auto;
+    
 }
 
 .contacts-header .item:not(:last-child){
@@ -167,24 +174,36 @@ p {
 
 .hero {
     background-color: var(--bcg-black-color);
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 200px 0;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
 }
 
-.hero-title {
+.hero > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .hero-title {
 
     margin-top: 0;
     margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+    text-align: center;
     color: var(--bcg-white-color);
+    width: 696px;
 }
 
 /* кнопка */
+
 .hero-btn {
     display: inline-block;
     color: var(--bcg-white-color);
@@ -207,6 +226,10 @@ p {
 }
 
 /* Особливості компанії */
+
+.features {
+    padding-top: 94px;
+}
 
 .features .list{
     display: flex;
@@ -241,6 +264,11 @@ p {
 
 /* Чим ми займаємося */
 
+.work {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .work .list {
     display: flex;
     flex-wrap: wrap;
@@ -264,6 +292,13 @@ p {
 }
 
 /* Команда*/
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
 
 .team .list {
     display: flex;
@@ -300,7 +335,6 @@ p {
 
 .team img {
     display: block;
-    margin-bottom: 30px;
 }
 
 .name-title{
@@ -308,13 +342,15 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .team p {
     font-size: 16px;
     line-height: 1.19;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
@@ -336,10 +372,15 @@ p {
     padding-bottom: 60px;
 }
 
+.footer li:not(:last-child){
+    margin-bottom: 9px;
+}
+
 .footer .logo {
     display: block;
     color: var(--bcg-white-color);
     margin-bottom: 20px;
+    margin-right: 0;
     
 }
 
@@ -358,6 +399,8 @@ p {
 .portfolio {
     font-size: 16px;
     line-height: 1.88;
+    margin-top: 94px;
+    margin-bottom: 94px;
 }
 
 
@@ -367,6 +410,7 @@ p {
 .portfolio .list-btn {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 
@@ -379,10 +423,9 @@ p {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+
     border-color: transparent;
     border-radius: 4px;
-
-    margin-bottom: 50px;
     padding: 6px 22px;
 }
 
@@ -416,9 +459,12 @@ p {
     margin-bottom: 30px;
 }
 
-.portfolio img {
-    margin-bottom: 20px;
+.card {
+    border: 1px solid #EEEEEE;
+    padding: 20px 24px;
+
 }
+
 
 .portfolio-title {
     color: var(--text-h-color);
@@ -427,8 +473,4 @@ p {
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
-}
-
-.portfolio p{
-    margin-bottom: 20px;
 }
