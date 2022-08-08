@@ -154,8 +154,6 @@ img {
     display: flex;
     align-items: center;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
     font-weight: 500;
     font-size: 14px;
@@ -167,6 +165,11 @@ img {
 
 .contacts-header .item:not(:last-child){
     margin-right: 50px;
+}
+
+.contacts-header link {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 
@@ -342,7 +345,7 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -397,10 +400,8 @@ img {
  /* ПОРТФОЛІО */
 
 .portfolio {
-    font-size: 16px;
-    line-height: 1.88;
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 
@@ -429,7 +430,7 @@ img {
     padding: 6px 22px;
 }
 
-.portfolio-btn:not(:nth-last-child(4n)) {
+.item-btn:not(:last-child) {
     margin-right: 8px;
 }
 
@@ -462,7 +463,12 @@ img {
 .card {
     border: 1px solid #EEEEEE;
     padding: 20px 24px;
+    border-top: 0;
+}
 
+.card p {
+    font-size: 16px;
+    line-height: 1.88;
 }
 
 
