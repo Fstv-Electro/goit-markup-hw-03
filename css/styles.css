@@ -450,6 +450,8 @@ img {
 .portfolio .list {
     display: flex;
     flex-wrap: wrap;
+
+    /* justify-content: space-between; */
 }
 
 .portfolio .item:not(:nth-child(3n)) {
@@ -464,6 +466,10 @@ img {
     border: 1px solid #EEEEEE;
     padding: 20px 24px;
     border-top: 0;
+    
+    /* розміщення за відстаню між елементами */
+    /* row-gap: 30px; */
+    /* column-gap: 32px; */
 }
 
 .card p {
